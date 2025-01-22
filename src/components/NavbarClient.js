@@ -19,14 +19,18 @@ const NavbarClient = ({ user }) => {
           <Link href="/" className={`${pathname == "/" && "text-blue-600"}`}>
             Home
           </Link>
-          <Link
-            href="/profile"
-            className={`${pathname == "/profile" && "text-blue-600"}`}
-          >
-            Profile
-          </Link>
+
           {user ? (
-            <LogoutLink>Log out</LogoutLink>
+            <>
+              {" "}
+              <Link
+                href="/profile"
+                className={`${pathname == "/profile" && "text-blue-600"}`}
+              >
+                Profile
+              </Link>
+              <LogoutLink>Log out</LogoutLink>
+            </>
           ) : (
             <>
               <LoginLink>Sign in</LoginLink>
