@@ -33,7 +33,7 @@ const NavbarClient = ({ user }) => {
             </>
           ) : (
             <>
-              <LoginLink>Sign in</LoginLink>
+              <LoginLink>Login</LoginLink>
               <RegisterLink>Sign up</RegisterLink>
             </>
           )}
