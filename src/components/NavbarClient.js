@@ -22,7 +22,6 @@ const NavbarClient = ({ user }) => {
 
           {user ? (
             <>
-              {" "}
               <Link
                 href="/profile"
                 className={`${pathname == "/profile" && "text-blue-600"}`}
